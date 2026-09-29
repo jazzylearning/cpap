@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sleep Apnoea Explained: OSA vs CSA</title>
+<script src="https://cdn.tailwindcss.com/@latest"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/chart.js@latest/dist/chart.umd.min.js"></script>
+<style>
+  body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; scroll-behavior: smooth; }
+  .cite { text-decoration: underline; text-decoration-style: dotted; text-decoration-color: #94a3b8; }
+  .cite:hover { color: #0284c7; }
+  section { scroll-margin-top: 5rem; }
+  .airway-diagram { max-width: 100%; height: auto; }
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-thumb { background: #94a3b8; border-radius: 6px; }
+</style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+<!-- NAVBAR -->
+<div class="navbar bg-sky-900 text-white sticky top-0 z-50 shadow-lg px-4 lg:px-8">
+  <div class="flex-1">
+    <span class="text-lg font-bold">😴 Sleep Apnoea: OSA vs CSA</span>
+  </div>
+  <div class="flex-none hidden lg:block">
+    <ul class="menu menu-horizontal px-1 text-sm gap-1">
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#comparison">OSA vs CSA</a></li>
+      <li><a href="#pathophysiology">Why it happens</a></li>
+      <li><a href="#organs">Body effects</a></li>
+      <li><a href="#bp">Blood pressure</a></li>
+      <li><a href="#treatment">Treatments</a></li>
+      <li><a href="#telemedicine">Telemedicine</a></li>
+      <li><a href="#innovation">Innovation</a></li>
+      <li><a href="#glossary">Glossary</a></li>
+      <li><a href="#sources">Sources</a></li>
+    </ul>
+  </div>
+  <div class="flex-none lg:hidden">
+    <details class="dropdown dropdown-end">
+      <summary class="btn btn-ghost btn-sm">☰</summary>
+      <ul class="menu dropdown-content bg-white text-slate-800 rounded-box shadow z-50 w-56 mt-2">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#comparison">OSA vs CSA</a></li>
+        <li><a href="#pathophysiology">Why it happens</a></li>
+        <li><a href="#organs">Body effects</a></li>
+        <li><a href="#bp">Blood pressure</a></li>
+        <li><a href="#treatment">Treatments</a></li>
+        <li><a href="#telemedicine">Telemedicine</a></li>
+        <li><a href="#innovation">Innovation</a></li>
+        <li><a href="#glossary">Glossary</a></li>
+        <li><a href="#sources">Sources</a></li>
+      </ul>
+    </details>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero bg-gradient-to-br from-sky-800 to-slate-900 text-white py-14 px-4">
+  <div class="hero-content text-center max-w-3xl">
+    <div>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">Understanding Sleep Apnoea</h1>
+      <p class="text-lg md:text-xl text-sky-100">A plain-language guide to Obstructive (OSA) and Central (CSA) Sleep Apnoea — how they differ, what they do to your body, and what actually helps — based on 17 peer-reviewed sources and a 380-page clinical monograph.</p>
+    </div>
+  </div>
+</div>
+
+<div class="max-w-5xl mx-auto px-4 py-10 space-y-16">
+
+<!-- MEDICAL DISCLAIMER -->
+<div role="alert" class="alert bg-amber-50 border border-amber-300 text-amber-900 shadow-sm">
+  <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+  <div>
+    <strong>Medical disclaimer:</strong> This page is an educational summary of published research. It is not medical advice, cannot diagnose you, and does not replace a consultation, a sleep study, or your doctor's judgement. If you snore, feel exhausted, or someone tells you your breathing stops at night, please talk to a physician or sleep specialist.
+  </div>
+</div>
+
+<!-- SUMMARY -->
+<section id="summary">
+  <h2 class="text-3xl font-bold text-sky-900 mb-4 border-b-2 border-sky-200 pb-2">1. Quick summary — key takeaways</h2>
+  <div class="grid md:grid-cols-2 gap-4">
+    <div class="stats shadow bg-white col-span-2 md:col-span-1">
+      <div class="stat">
+        <div class="stat-title">People affected worldwide (mild–severe OSA)</div>
+        <div class="stat-value text-sky-700 text-3xl">~1 billion</div>
+        <div class="stat-desc">425 million have moderate-to-severe OSA · <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=30" target="_blank">Monograph, p.30</a></div>
+      </div>
+    </div>
+    <div class="stats shadow bg-white col-span-2 md:col-span-1">
+      <div class="stat">
+        <div class="stat-title">Undiagnosed in Europe</div>
+        <div class="stat-value text-sky-700 text-3xl">~80%</div>
+        <div class="stat-desc">of European adults with OSA remain undiagnosed · <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=19" target="_blank">Monograph, p.19</a></div>
+      </div>
+    </div>
+  </div>
+  <ul class="mt-6 space-y-3">
+    <li class="flex gap-3"><span class="badge badge-info text-white shrink-0 mt-1">1</span> <span><strong>OSA</strong> is a <em>mechanical</em> problem — your throat physically collapses during sleep. <strong>CSA</strong> is a <em>control/signalling</em> problem — the brain's breathing "thermostat" temporarily stops sending the signal to breathe. They can look similar to a bed-partner but need different treatment. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=1" target="_blank">Schwarz 2024, p.310</a></span></li>
+    <li class="flex gap-3"><span class="badge badge-info text-white shrink-0 mt-1">2</span> <span>OSA is far more common than CSA; CSA is mostly seen alongside <strong>heart failure</strong> (up to 40–75% of heart-failure patients), high altitude, opioid use, or shortly after starting CPAP. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=37" target="_blank">Monograph, p.37</a></span></li>
+    <li class="flex gap-3"><span class="badge badge-info text-white shrink-0 mt-1">3</span> <span>CPAP is still the best-studied treatment for OSA and lowers blood pressure by roughly <strong>2–3.5 mmHg</strong>, with the biggest drop happening at night — but only if it's actually worn (≥4–5 h/night). <a class="cite" href="https://myaidrive.com/LrUWKxZcyczWEEYSDapgCLchCwU25SEt?pdfPage=3" target="_blank">Benning 2025, p.3</a></span></li>
+    <li class="flex gap-3"><span class="badge badge-info text-white shrink-0 mt-1">4</span> <span>People who benefit most from CPAP's blood-pressure effect are those with <strong>already-high/uncontrolled blood pressure</strong>, <strong>severe OSA</strong>, and <strong>younger age</strong> — not everyone with OSA gets a big BP benefit. <a class="cite" href="https://myaidrive.com/6vUSVAyJ5TK8sdJvRcjLb9WceoWViGZr?pdfPage=5" target="_blank">Pengo 2025, p.5</a></span></li>
+    <li class="flex gap-3"><span class="badge badge-info text-white shrink-0 mt-1">5</span> <span>For heart failure specifically, one PAP mode (adaptive servo-ventilation, ASV) can be <strong>harmful</strong> in the most severely weakened hearts (LVEF ≤45%) and is contraindicated there — a good example of "one size does not fit all". <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=315" target="_blank">Schwarz 2024, p.315</a></span></li>
+    <li class="flex gap-3"><span class="badge badge-info text-white shrink-0 mt-1">6</span> <span>Telemedicine ("e-Sleep") can diagnose, titrate, and follow up sleep apnoea remotely about as well as in-person care, and modestly improves CPAP adherence (roughly +30–40 minutes/night in pooled analyses) — but it can't replace a physical exam and long-term data are still limited. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=5" target="_blank">Verbraecken 2025, p.5</a></span></li>
+  </ul>
+</section>
+
+<!-- COMPARISON TABLE -->
+<section id="comparison">
+  <h2 class="text-3xl font-bold text-sky-900 mb-4 border-b-2 border-sky-200 pb-2">2. OSA vs CSA — side by side</h2>
+  <div class="overflow-x-auto rounded-xl shadow border border-slate-200">
+    <table class="table table-zebra bg-white">
+      <thead class="bg-sky-800 text-white text-sm">
+        <tr><th></th><th>Obstructive Sleep Apnoea (OSA)</th><th>Central Sleep Apnoea (CSA)</th></tr>
+      </thead>
+      <tbody class="text-sm">
+        <tr>
+          <td class="font-semibold bg-slate-50">Mechanism</td>
+          <td>Throat (pharynx) physically narrows/collapses despite ongoing effort to breathe. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=48" target="_blank">Monograph, p.48</a></td>
+          <td>Brain's respiratory control system temporarily stops sending the drive-to-breathe signal — no obstruction. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=344" target="_blank">Monograph, p.344</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold bg-slate-50">Respiratory effort during event</td>
+          <td>Present and increasing (chest/abdomen keep trying to move air past the blockage). <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=358" target="_blank">Monograph, p.358</a></td>
+          <td>Absent — no effort, because the drive to breathe has stopped. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=344" target="_blank">Monograph, p.344</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold bg-slate-50">Typical patient</td>
+          <td>Any adult, often with obesity, large neck circumference, snoring. Prevalence ~13–23% of adults (moderate-severe). <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=30" target="_blank">Monograph, p.30</a></td>
+          <td>Much less common overall (general population ~0.9–5%); strongly linked to heart failure (up to 40–75%), stroke, opioid use, or high altitude. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=37" target="_blank">Monograph, p.37</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold bg-slate-50">Key risk factors</td>
+          <td>Obesity/neck fat, male sex, older age, sedatives, upper-airway anatomy. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=44" target="_blank">Monograph, p.44</a></td>
+          <td>Heart failure, stroke, opioids, high altitude, starting PAP therapy (treatment-emergent), male sex. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=313" target="_blank">Schwarz 2024, p.313</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold bg-slate-50">Diagnosis signs</td>
+          <td>AHI ≥5/h with symptoms, or ≥15/h alone; loud snoring, witnessed pauses, choking, morning headache. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=156" target="_blank">Monograph, p.156</a></td>
+          <td>Central AHI ≥5/h with >50% of events central; often quieter, less snoring, sometimes less daytime sleepiness than OSA despite serious severity. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=312" target="_blank">Schwarz 2024, p.312</a>, <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=366" target="_blank">Monograph, p.366</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold bg-slate-50">Main treatments</td>
+          <td>CPAP, mandibular advancement device (MAD), positional therapy, weight loss/bariatric surgery, hypoglossal nerve stimulation. <a class="cite" href="https://myaidrive.com/wBgKLoBKBuqC4XshvMDHYYy7XTJE8RjE?pdfPage=6" target="_blank">Randerath 2021, p.6</a></td>
+          <td>Treat the underlying cause first (e.g. optimise heart-failure therapy); then CPAP, adaptive servo-ventilation (ASV — but not if LVEF ≤45%), acetazolamide, oxygen, or opioid dose reduction. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=313" target="_blank">Schwarz 2024, p.313</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="text-xs text-slate-500 mt-2">Note: several of the sources in this folder focus heavily on OSA; detailed CSA evidence in this bundle comes mainly from one CME review (Schwarz 2024) and the monograph — see the "gaps" callouts below.</p>
+</section>
+
+<!-- PATHOPHYSIOLOGY -->
+<section id="pathophysiology">
+  <h2 class="text-3xl font-bold text-sky-900 mb-4 border-b-2 border-sky-200 pb-2">3. Why it happens: the airway and the breathing-control loop</h2>
+
+  <div class="card bg-white shadow border border-slate-200 mb-6">
+    <div class="card-body">
+      <h3 class="card-title text-sky-800">OSA: a collapsible airway</h3>
+      <div class="grid md:grid-cols-2 gap-4 items-center">
+        <div>
+          <svg viewBox="0 0 320 200" class="airway-diagram">
+            <rect width="320" height="200" fill="#f0f9ff" rx="10"/>
+            <text x="160" y="24" text-anchor="middle" font-size="13" font-weight="bold" fill="#0c4a6e">Awake — airway open</text>
+            <path d="M40,60 Q160,40 280,60 L280,80 Q160,60 40,80 Z" fill="#7dd3fc" stroke="#0369a1" stroke-width="2"/>
+            <text x="160" y="95" text-anchor="middle" font-size="11" fill="#0369a1">air flows freely</text>
+            <text x="160" y="130" text-anchor="middle" font-size="13" font-weight="bold" fill="#7f1d1d">Asleep (OSA) — muscle tone drops, tongue/soft tissue falls back</text>
+            <path d="M40,160 Q160,175 280,160 L280,163 Q160,178 40,163 Z" fill="#fca5a5" stroke="#991b1b" stroke-width="2"/>
+            <text x="160" y="190" text-anchor="middle" font-size="11" fill="#991b1b">airway pinches shut → apnoea</text>
+          </svg>
+        </div>
+        <div class="text-sm space-y-2">
+          <p>Fat deposits around the throat, a naturally narrow airway, and loss of muscle tone during sleep let the soft palate and tongue fall backward, narrowing or completely blocking the airway. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=44" target="_blank">Monograph, p.44</a></p>
+          <p>Four overlapping factors ("endotypes") determine who gets OSA and how severe it is: (1) how collapsible the airway is anatomically (present to some degree in ~100% of patients), (2) how well the tongue/throat muscles compensate (impaired in ~36%), (3) how easily a person wakes up — the <strong>arousal threshold</strong> (low in ~37%, which stops muscles re-engaging), and (4) how unstable the breathing-control feedback loop is — <strong>loop gain</strong> (high in ~36%). <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=63" target="_blank">Monograph, p.63</a></p>
+          <p>Every 5 kg/m² drop in BMI reduces the pressure needed to keep the airway open by about 5 cmH₂O. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=67" target="_blank">Monograph, p.67</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card bg-white shadow border border-slate-200">
+    <div class="card-body">
+      <h3 class="card-title text-sky-800">CSA: an unstable breathing-control loop</h3>
+      <div class="grid md:grid-cols-2 gap-4 items-center">
+        <div>
+          <svg viewBox="0 0 320 220" class="airway-diagram">
+            <rect width="320" height="220" fill="#fef2f2" rx="10"/>
+            <circle cx="90" cy="60" r="38" fill="#fff" stroke="#0369a1" stroke-width="2"/>
+            <text x="90" y="55" text-anchor="middle" font-size="10" fill="#0369a1">Brainstem</text>
+            <text x="90" y="68" text-anchor="middle" font-size="10" fill="#0369a1">controller</text>
+            <circle cx="230" cy="60" r="38" fill="#fff" stroke="#0369a1" stroke-width="2"/>
+            <text x="230" y="55" text-anchor="middle" font-size="10" fill="#0369a1">Lungs / body</text>
+            <text x="230" y="68" text-anchor="middle" font-size="10" fill="#0369a1">("plant")</text>
+            <path d="M128,50 L192,50" stroke="#0284c7" stroke-width="2" marker-end="url(#arrow)"/>
+            <text x="160" y="42" text-anchor="middle" font-size="9" fill="#0284c7">sends breathing signal</text>
+            <path d="M192,72 L128,72" stroke="#dc2626" stroke-width="2" marker-end="url(#arrow2)"/>
+            <text x="160" y="90" text-anchor="middle" font-size="9" fill="#dc2626">CO₂ level feedback</text>
+            <defs>
+              <marker id="arrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#0284c7"/></marker>
+              <marker id="arrow2" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#dc2626"/></marker>
+            </defs>
+            <text x="160" y="130" text-anchor="middle" font-size="11" font-weight="bold" fill="#7f1d1d">Loop gain &gt; 1 → overshoot → cycle</text>
+            <path d="M40,160 C90,140 90,180 160,160 C230,140 230,180 280,160" fill="none" stroke="#991b1b" stroke-width="2.5"/>
+            <text x="160" y="195" text-anchor="middle" font-size="10" fill="#991b1b">breathing surges then stops (periodic breathing / central apnoea)</text>
+            <text x="160" y="212" text-anchor="middle" font-size="9" fill="#64748b">CO₂ dips below the "apnoeic threshold" → drive to breathe switches off until CO₂ rebuilds</text>
+          </svg>
+        </div>
+        <div class="text-sm space-y-2">
+          <p><strong>Loop gain</strong> = how strongly the body over-reacts to a small change in breathing (a bit like an over-sensitive thermostat). When loop gain is greater than 1, the breathing system overshoots, the same way a thermostat that overcorrects can swing a room between too hot and too cold. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=313" target="_blank">Schwarz 2024, p.313</a></p>
+          <p>After a burst of over-breathing (hyperventilation), CO₂ falls below the "apnoeic threshold" — only about 3–5 mmHg below normal — and the drive to breathe switches off completely until CO₂ rebuilds. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=72" target="_blank">Monograph, p.72–73</a></p>
+          <p>In heart failure, a weaker heart pumps blood more slowly, so it takes longer for the brain's sensors to "see" a CO₂ change — this delay itself destabilises the loop, and fluid shifted overnight from the legs into the neck/lungs adds to the instability. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=313" target="_blank">Schwarz 2024, p.313–315</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ORGAN EFFECTS -->
+<section id="organs">
+  <h2 class="text-3xl font-bold text-sky-900 mb-4 border-b-2 border-sky-200 pb-2">4. Effects on organs and systems</h2>
+
+  <div id="bp" class="mb-10">
+    <h3 class="text-2xl font-semibold text-sky-800 mb-3">Blood pressure — the best-studied effect</h3>
+    <p class="mb-4 text-sm">Three large meta-analyses in this collection quantify how much CPAP lowers blood pressure, and — importantly — <em>who benefits most</em>. The reductions are real but modest on average; they matter most for people with high or hard-to-control blood pressure.</p>
+    <div class="card bg-white shadow border border-slate-200 p-4">
+      <canvas id="bpChart" height="260"></canvas>
+    </div>
+    <p class="text-xs text-slate-500 mt-2">Data: Benning et al. 2025 (75 RCTs, 10,025 patients) — overall CPAP effect by blood-pressure measurement type. <a class="cite" href="https://myaidrive.com/LrUWKxZcyczWEEYSDapgCLchCwU25SEt?pdfPage=3" target="_blank">Benning 2025, p.3–4</a></p>
+
+    <div class="grid md:grid-cols-2 gap-4 mt-6">
+      <div class="card bg-sky-50 border border-sky-200 p-5">
+        <h4 class="font-bold text-sky-900 mb-2">Who benefits most</h4>
+        <ul class="list-disc pl-5 text-sm space-y-1">
+          <li>Higher/uncontrolled baseline blood pressure: CPAP–control SBP difference −2.57 mmHg vs ~0 mmHg in already-controlled/normotensive patients. <a class="cite" href="https://myaidrive.com/6vUSVAyJ5TK8sdJvRcjLb9WceoWViGZr?pdfPage=5" target="_blank">Pengo 2025, p.5</a></li>
+          <li>Severe OSA (AHI≥30) and high hypoxic burden (SpO₂min ≤77%): SBP falls further (e.g. −3.32 mmHg vs weaker effect in less severe OSA). <a class="cite" href="https://myaidrive.com/qzTZazMhiQXJQE3bCTTgBNbJSmChH6Pv?pdfPage=7" target="_blank">Pengo 2020, p.7</a></li>
+          <li>Younger age (≤60 years) shows a somewhat larger office/24h BP drop than older age groups. <a class="cite" href="https://myaidrive.com/6vUSVAyJ5TK8sdJvRcjLb9WceoWViGZr?pdfPage=6" target="_blank">Pengo 2025, p.6</a></li>
+          <li>Using CPAP ≥5 h/night: 24h SBP −4.2 mmHg vs −2.1 mmHg for <5h/night. <a class="cite" href="https://myaidrive.com/LrUWKxZcyczWEEYSDapgCLchCwU25SEt?pdfPage=6" target="_blank">Benning 2025, p.6</a></li>
+        </ul>
+      </div>
+      <div class="card bg-amber-50 border border-amber-200 p-5">
+        <h4 class="font-bold text-amber-900 mb-2">A surprising exception</h4>
+        <p class="text-sm">In patients who <em>also</em> have heart failure, CPAP's blood-pressure effect can reverse: across 3 trials, office SBP actually <strong>increased</strong> by +5.82 mmHg on CPAP, versus a −2.39 mmHg reduction in studies without heart failure (p=0.009) — a reminder that CPAP's cardiovascular effects are not uniform across all patients. <a class="cite" href="https://myaidrive.com/qzTZazMhiQXJQE3bCTTgBNbJSmChH6Pv?pdfPage=6" target="_blank">Pengo 2020, p.6, 10</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-5">
+    <div class="card bg-white shadow border border-slate-200 p-5">
+      <h4 class="font-bold text-rose-700 mb-2">❤️ Heart &amp; arrhythmia</h4>
+      <p class="text-sm">CSA occurs in up to 40% of unselected heart-failure patients (75% in the most severe reduced-function cases). In the CANPAP trial, CPAP halved the apnoea index (40→19–21/h) and improved heart pumping (ejection fraction) by nearly 5%, but did not improve overall survival in the main analysis. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=370" target="_blank">Monograph, p.370</a>, <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=314" target="_blank">Schwarz 2024, p.314</a></p>
+      <p class="text-sm mt-2">Recurrent pressure swings and low oxygen promote structural changes in the heart's upper chambers, raising atrial fibrillation risk; a 10% rise in night-to-night breathing-disturbance variability was linked to an 89% higher risk of persistent AF. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=259" target="_blank">Monograph, p.259</a></p>
+    </div>
+    <div class="card bg-white shadow border border-slate-200 p-5">
+      <h4 class="font-bold text-indigo-700 mb-2">🧠 Brain &amp; stroke</h4>
+      <p class="text-sm">OSA is an independent risk factor for stroke. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=159" target="_blank">Monograph, p.159</a></p>
+      <p class="text-sm mt-2">In a Korean cohort of 1,441 adults followed 8 years, moderate-to-severe OSA more than doubled the risk of new small brain bleeds ("cerebral microbleeds"): RR = 2.14 (95% CI 1.08–4.23). <a class="cite" href="https://myaidrive.com/j3vx2j28rJTVXGsHVemZQH?pdfPage=7" target="_blank">Siddiquee 2025, p.7–8</a></p>
+      <p class="text-sm mt-2">A large US veterans cohort (11M+ people) found OSA associated with a higher risk of incident Parkinson disease (HR 1.92); starting CPAP early cut that risk (HR 0.69) — about 439 people would need early CPAP to prevent one case of Parkinson's over 5 years. <a class="cite" href="https://myaidrive.com/Lon8xDY2anFFNQbvt6sFgp?pdfPage=5" target="_blank">Neilson 2025, p.5</a></p>
+    </div>
+    <div class="card bg-white shadow border border-slate-200 p-5">
+      <h4 class="font-bold text-emerald-700 mb-2">⚖️ Metabolism &amp; weight</h4>
+      <p class="text-sm">Weight and OSA reinforce each other, but not in a simple straight line: the first 10% of weight loss can cut AHI by more than 20–30%, with diminishing extra benefit beyond that. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=33" target="_blank">Monograph, p.33, 48</a></p>
+      <p class="text-sm mt-2">The newer weight-loss drug tirzepatide (SURMOUNT-OSA trials) produced 17.7–19.6% body-weight loss and cut AHI by 25.3–29.3 events/hour, leading to FDA approval specifically for obesity-related OSA — the first drug approved directly for OSA. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=279" target="_blank">Monograph, p.279</a></p>
+      <p class="text-sm mt-2">Bariatric surgery (>25–30% total weight loss) cuts AHI by ~19 events/hour on average, with OSA remission in roughly 26–76% (average ~65%) of patients — meaning many still have residual OSA afterward. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=282" target="_blank">Monograph, p.281–282</a></p>
+    </div>
+    <div class="card bg-white shadow border border-slate-200 p-5">
+      <h4 class="font-bold text-fuchsia-700 mb-2">🧬 Hormones (testosterone)</h4>
+      <p class="text-sm">Testosterone helps maintain muscle tone in the throat; low testosterone can worsen airway collapsibility, and low testosterone itself is linked to fatigue, low mood, and reduced concentration. <a class="cite" href="https://myaidrive.com/m8Fydax9GMZ4kRirNCeXic?pdfPage=7" target="_blank">Andersen 2026, p.7, 9</a></p>
+      <p class="text-sm mt-2"><strong>Thin/negative finding worth stating plainly:</strong> despite this connection, meta-analyses show CPAP does <em>not</em> significantly change testosterone levels — treating OSA does not reliably "fix" low testosterone. <a class="cite" href="https://myaidrive.com/m8Fydax9GMZ4kRirNCeXic?pdfPage=8" target="_blank">Andersen 2026, p.8</a></p>
+      <p class="text-sm mt-2">Testosterone replacement therapy, conversely, can worsen or trigger OSA and should prompt a sleep evaluation first in higher-risk patients. <a class="cite" href="https://myaidrive.com/m8Fydax9GMZ4kRirNCeXic?pdfPage=8" target="_blank">Andersen 2026, p.7–9</a></p>
+    </div>
+    <div class="card bg-white shadow border border-slate-200 p-5">
+      <h4 class="font-bold text-orange-700 mb-2">😵 Mood, cognition &amp; sleepiness</h4>
+      <p class="text-sm">In a Canadian cohort of over 30,000 adults aged 45–85, people at high risk of OSA had about 40% higher odds of a mental-health condition (both at one point in time and later), rising to ~44% higher odds when tracked repeatedly over time. <a class="cite" href="https://myaidrive.com/UsKgVEkz9XGW77x9dEviaw?pdfPage=7" target="_blank">Kendzerska 2025, p.7–8</a></p>
+      <p class="text-sm mt-2">CPAP improves subjective daytime sleepiness (Epworth Sleepiness Scale) by about 2.1 points on average in randomised trials. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=117" target="_blank">Monograph, p.117</a></p>
+    </div>
+    <div class="card bg-white shadow border border-slate-200 p-5">
+      <h4 class="font-bold text-slate-700 mb-2">🚗 Accidents</h4>
+      <p class="text-sm">People with OSA have roughly 1.5–2.5 times the risk of motor-vehicle accidents compared with the general population; how sleepy someone <em>feels</em> predicts crash risk better than the AHI number alone. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=113" target="_blank">Monograph, p.113, 159</a></p>
+      <p class="text-sm mt-2">Europe-wide, driver sleepiness is estimated to be involved in around 20% of severe road-traffic accidents. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=23" target="_blank">Monograph, p.23</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- TREATMENT -->
+<section id="treatment">
+  <h2 class="text-3xl font-bold text-sky-900 mb-4 border-b-2 border-sky-200 pb-2">5. Treatment overview</h2>
+  <div class="overflow-x-auto rounded-xl shadow border border-slate-200">
+    <table class="table bg-white text-sm">
+      <thead class="bg-slate-700 text-white">
+        <tr><th>Treatment</th><th>Best for</th><th>What the evidence shows</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="font-semibold">CPAP (continuous positive airway pressure)</td>
+          <td>Moderate–severe OSA (first-line); part of CSA management</td>
+          <td>Splints the airway open all night. Needs ≥4 h/night to count as "adequate" use; benefits (incl. blood pressure) grow with more hours, optimally 6–7 h/night. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=297" target="_blank">Monograph, p.296–297</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold">Mandibular advancement device (MAD)</td>
+          <td>Mild–moderate OSA, CPAP-intolerant patients, especially women with smaller AHI/BMI</td>
+          <td>A custom mouthguard that pulls the jaw forward. Similar symptom relief to CPAP with better comfort/compliance, but a smaller blood-pressure effect. <a class="cite" href="https://myaidrive.com/wBgKLoBKBuqC4XshvMDHYYy7XTJE8RjE?pdfPage=6" target="_blank">Randerath 2021, p.6–7</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold">Hypoglossal nerve stimulation</td>
+          <td>Moderate–severe OSA, CPAP failure, BMI &lt;32, favourable airway-collapse pattern</td>
+          <td>An implanted device stimulates the tongue nerve to keep the airway open. The pivotal STAR/Inspire trial showed a 68% AHI reduction; newer systems report 52–66% reductions. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=316" target="_blank">Monograph, p.316–317</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold">Positional therapy</td>
+          <td>OSA that happens mainly when sleeping on the back (20–50% of patients)</td>
+          <td>A wearable device nudges the sleeper off their back. Can roughly halve the AHI in the right patients, but long-term adherence to the device is a known weak point. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=312" target="_blank">Monograph, p.312</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold">Weight loss / bariatric surgery</td>
+          <td>OSA associated with overweight/obesity</td>
+          <td>>25–30% weight loss cuts AHI by ~19 events/hour on average; remission in ~65% on average, but residual OSA is common. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=282" target="_blank">Monograph, p.281–282</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold">Adaptive servo-ventilation (ASV)</td>
+          <td>CSA / Cheyne-Stokes respiration, especially with preserved heart function</td>
+          <td>The most effective PAP mode for suppressing central events, but <strong>contraindicated</strong> in heart failure with ejection fraction ≤45% (SERVE-HF showed increased mortality); newer algorithms look safer in this group but are not yet fully validated. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=315" target="_blank">Schwarz 2024, p.315</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold">Oxygen therapy</td>
+          <td>High-altitude CSA; select CSA-heart-failure cases</td>
+          <td>Blunts the exaggerated hypoxic drive that fuels loop-gain instability. A dedicated heart-failure oxygen trial (LOFT-HF) was stopped early for futility, partly due to poor adherence. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=373" target="_blank">Monograph, p.372–373</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold">Drugs — carbonic anhydrase inhibitors (e.g. acetazolamide)</td>
+          <td>High-loop-gain CSA (altitude, idiopathic, some heart-failure cases)</td>
+          <td>Lowers "loop gain" and reduces AHI by roughly 38% in meta-analyses; European guidance still restricts use to clinical trials pending more long-term safety data. <a class="cite" href="https://myaidrive.com/wBgKLoBKBuqC4XshvMDHYYy7XTJE8RjE?pdfPage=11" target="_blank">Randerath 2021, p.10–11</a>, <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=373" target="_blank">Monograph, p.373</a></td>
+        </tr>
+        <tr>
+          <td class="font-semibold">Opioid dose reduction</td>
+          <td>Opioid-induced central apnoea</td>
+          <td>First-line management is reducing the opioid dose responsible; supplemental oxygen alone should never be given without positive pressure support in this setting, due to hypercapnia risk. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=316" target="_blank">Schwarz 2024, p.316</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<!-- TELEMEDICINE -->
+<section id="telemedicine">
+  <h2 class="text-3xl font-bold text-sky-900 mb-4 border-b-2 border-sky-200 pb-2">6. Telemedicine / "e-Sleep"</h2>
+  <p class="mb-4 text-sm">A 2025 European Respiratory Society statement (Verbraecken et al.) reviewed the evidence for remote/digital sleep-apnoea care across the whole care pathway. Importantly, <strong>this ERS statement is an evidence summary, not a clinical practice guideline</strong> — it does not issue formal recommendations. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=1" target="_blank">Verbraecken 2025, p.1</a></p>
+  <div class="grid md:grid-cols-2 gap-5">
+    <div class="card bg-white shadow border border-slate-200 p-5">
+      <h4 class="font-bold text-sky-800 mb-2">🩺 Diagnosis</h4>
+      <p class="text-sm">Remote/attended home sleep testing with teletransmission of raw data reduces time to diagnosis and lowers travel/hospitalisation costs. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=4" target="_blank">Verbraecken 2025, p.4</a></p>
+    </div>
+    <div class="card bg-white shadow border border-slate-200 p-5">
+      <h4 class="font-bold text-sky-800 mb-2">📈 PAP titration</h4>
+      <p class="text-sm">Unsupervised home auto-CPAP titration guided remotely achieves pressure settings and adherence comparable to in-lab titration. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=4" target="_blank">Verbraecken 2025, p.4, 12</a></p>
+    </div>
+    <div class="card bg-white shadow border border-slate-200 p-5">
+      <h4 class="font-bold text-sky-800 mb-2">🔁 Follow-up &amp; adherence</h4>
+      <p class="text-sm">Cloud-connected devices transmit nightly usage, leak, and residual AHI; remote troubleshooting improved adherence for 16/30 patients in one study, and pooled meta-analyses show +29 to +41 minutes/night of extra use versus usual care. <a class="cite" href="https://myaidrive.com/66vBD53VDD8tNeZhmLcf5k?pdfPage=3" target="_blank">2025_ERS_CPAP compendium, p.3–5</a></p>
+    </div>
+    <div class="card bg-white shadow border border-slate-200 p-5">
+      <h4 class="font-bold text-emerald-700 mb-2">✅ Benefits</h4>
+      <ul class="list-disc pl-5 text-sm space-y-1">
+        <li>Cost savings for patients (travel, lodging, missed work) and sometimes for the system: one RCT found ~37 CHF/patient savings. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=9" target="_blank">Verbraecken 2025, p.9</a></li>
+        <li>National scalability: in France, 97% of the country's 1.6 million CPAP users are managed via telemonitoring under a pay-for-performance scheme. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=24" target="_blank">Monograph, p.24</a></li>
+      </ul>
+    </div>
+    <div class="card bg-white shadow border border-slate-200 p-5 md:col-span-2">
+      <h4 class="font-bold text-amber-700 mb-2">⚠️ Limitations</h4>
+      <ul class="list-disc pl-5 text-sm space-y-1">
+        <li>Cannot substitute for an in-person physical exam (e.g. cannot listen to the lungs remotely). <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=11" target="_blank">Verbraecken 2025, p.11</a></li>
+        <li>Staff-time savings are inconsistent — some programmes actually <em>increase</em> clinician/nursing time from frequent remote contacts. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=9" target="_blank">Verbraecken 2025, p.1, 5, 9</a></li>
+        <li>A "ceiling effect" — telemedicine shows less advantage when the standard in-person clinic is already excellent. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=12" target="_blank">Verbraecken 2025, p.5, 12</a></li>
+        <li>Long-term (>12 month) adherence/termination data remain sparse; validated evidence is strongest for short-term (3–6 month) adult adherence. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=5" target="_blank">Verbraecken 2025, p.5, 10</a></li>
+        <li>Digital-access disparities: elderly, less-educated, or lower socioeconomic-status patients may be disadvantaged. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=9" target="_blank">Verbraecken 2025, p.6, 9–10</a></li>
+        <li>Complex patients with CSA (heart failure, stroke, kidney failure, atrial fibrillation) are validated by far fewer telemedicine studies, and remote tools must reliably tell CSA apart from OSA — which is not yet fully solved. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=11" target="_blank">Verbraecken 2025, p.11</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- INNOVATION -->
+<section id="innovation">
+  <h2 class="text-3xl font-bold text-sky-900 mb-4 border-b-2 border-sky-200 pb-2">7. Where more research/innovation is needed</h2>
+  <div class="grid md:grid-cols-2 gap-4">
+    <div class="card bg-slate-100 p-5"><p class="text-sm">📊 <strong>Individual-patient-data meta-analyses</strong> instead of aggregate/study-level data, to pin down exactly who benefits from CPAP and by how much. <a class="cite" href="https://myaidrive.com/qzTZazMhiQXJQE3bCTTgBNbJSmChH6Pv?pdfPage=10" target="_blank">Pengo 2020, p.10–11</a></p></div>
+    <div class="card bg-slate-100 p-5"><p class="text-sm">🧪 <strong>Prospective phenotype-driven trials</strong> confirming who truly benefits (age, baseline BP, hypoxic burden) rather than relying on subgroup analyses of existing trials. <a class="cite" href="https://myaidrive.com/LrUWKxZcyczWEEYSDapgCLchCwU25SEt?pdfPage=10" target="_blank">Benning 2025, p.9–10</a></p></div>
+    <div class="card bg-slate-100 p-5"><p class="text-sm">💔 <strong>CSA is far less studied than OSA</strong> — there are simply fewer randomised trials, so many CSA treatment decisions rest on thinner evidence. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=317" target="_blank">Schwarz 2024, p.317</a></p></div>
+    <div class="card bg-slate-100 p-5"><p class="text-sm">🫀 <strong>Re-evaluating ASV in heart failure</strong> — the newer, safer-looking ASV algorithms (ADVENT-HF) may prompt guideline revisions away from the older SERVE-HF-based caution. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=317" target="_blank">Schwarz 2024, p.315, 317</a></p></div>
+    <div class="card bg-slate-100 p-5"><p class="text-sm">♀️ <strong>Sex-specific tools and representation</strong> — women made up only ~21.6% of participants in Benning's 75 pooled BP trials, and standard screening tools (STOP-Bang, Epworth) are less sensitive in women. <a class="cite" href="https://myaidrive.com/LrUWKxZcyczWEEYSDapgCLchCwU25SEt?pdfPage=10" target="_blank">Benning 2025, p.9–10</a></p></div>
+    <div class="card bg-slate-100 p-5"><p class="text-sm">💊 <strong>Long-term safety of new weight-loss/OSA drugs</strong> — durability, muscle-mass loss, and true cardiovascular-outcome benefit of tirzepatide/GLP-1 drugs specifically in OSA populations remain to be proven over years, not months. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=338" target="_blank">Monograph, p.336–338</a></p></div>
+    <div class="card bg-slate-100 p-5"><p class="text-sm">📡 <strong>Telemedicine for complex patients</strong> — validating remote pathways for heart failure, stroke, kidney failure, and atrial-fibrillation patients where CSA is common, plus resolving data-security/legal/reimbursement frameworks across countries. <a class="cite" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ?pdfPage=13" target="_blank">Verbraecken 2025, p.11, 13</a></p></div>
+    <div class="card bg-slate-100 p-5"><p class="text-sm">📐 <strong>Standardising newer severity metrics</strong> (hypoxic burden, loop gain, heart-rate response) so they can be measured consistently and linked to real outcomes, moving beyond the simple AHI count. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=138" target="_blank">Monograph, p.129, 138</a></p></div>
+  </div>
+</section>
+
+<!-- GLOSSARY -->
+<section id="glossary">
+  <h2 class="text-3xl font-bold text-sky-900 mb-4 border-b-2 border-sky-200 pb-2">8. Glossary</h2>
+  <div class="grid md:grid-cols-2 gap-3">
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">AHI — Apnoea-Hypopnoea Index</div><div class="collapse-content text-sm"><p>Average number of breathing pauses (apnoeas) and shallow-breathing events (hypopnoeas) per hour of sleep. Used to grade severity: none &lt;5, mild 5–15, moderate 15–30, severe ≥30 events/hour. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=126" target="_blank">Monograph, p.126</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">ODI — Oxygen Desaturation Index</div><div class="collapse-content text-sm"><p>Number of times per hour that blood oxygen saturation drops by a defined amount (commonly ≥3% or ≥4%). A companion measure to AHI reflecting how much oxygen actually falls. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=127" target="_blank">Monograph, p.127</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">PSG — Polysomnography</div><div class="collapse-content text-sm"><p>The full, "gold-standard" overnight sleep test, usually done in a lab, recording brain waves, eye movement, muscle activity, breathing, and oxygen levels. Can reliably tell obstructive from central events. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=239" target="_blank">Monograph, p.239</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">Polygraphy / HSAT (home sleep apnoea test)</div><div class="collapse-content text-sm"><p>A simplified, portable version of a sleep study, usually done at home, that records fewer signals (no brain waves) and cannot detect arousals — this tends to make AHI look lower than it truly is. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=155" target="_blank">Monograph, p.155, 239</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">CPAP — Continuous Positive Airway Pressure</div><div class="collapse-content text-sm"><p>A bedside machine that gently blows constant air pressure through a mask to keep the airway physically open all night. The first-line treatment for moderate-severe OSA. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=70" target="_blank">Monograph, p.70</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">ASV — Adaptive Servo-Ventilation</div><div class="collapse-content text-sm"><p>A "smart" PAP machine that continuously adjusts pressure support breath-by-breath to smooth out the surge-and-pause cycles of central sleep apnoea/Cheyne-Stokes respiration. Not safe for severely weakened hearts (LVEF ≤45%). <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=314" target="_blank">Schwarz 2024, p.314–315</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">MAD — Mandibular Advancement Device</div><div class="collapse-content text-sm"><p>A custom-fitted oral appliance, similar to a mouthguard, that holds the lower jaw slightly forward during sleep to keep the airway open. <a class="cite" href="https://myaidrive.com/wBgKLoBKBuqC4XshvMDHYYy7XTJE8RjE?pdfPage=6" target="_blank">Randerath 2021, p.6</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">Loop gain</div><div class="collapse-content text-sm"><p>A mathematical measure of how strongly the breathing-control system over- or under-reacts to a disturbance. A value above 1 makes breathing unstable and prone to central-apnoea cycles. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=313" target="_blank">Schwarz 2024, p.313</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">Apnoeic threshold</div><div class="collapse-content text-sm"><p>The CO₂ level below which the brain switches off the drive to breathe entirely — normally only 3–5 mmHg below a resting/eupnoeic CO₂ level. Central to how central apnoeas start and stop. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=72" target="_blank">Monograph, p.72–73</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">Cheyne-Stokes respiration (CSR)</div><div class="collapse-content text-sm"><p>A specific "crescendo-decrescendo" (rise-then-fall) breathing pattern with central apnoeas in between, classically seen in heart failure. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=348" target="_blank">Monograph, p.348</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">TECSA — Treatment-Emergent Central Sleep Apnoea</div><div class="collapse-content text-sm"><p>Also called "complex sleep apnoea": central apnoeas that newly appear once CPAP has opened up the airway and resolved the obstructive events. Usually settles within weeks in most patients. <a class="cite" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a?pdfPage=316" target="_blank">Schwarz 2024, p.311, 316</a></p></div></div>
+    <div class="collapse collapse-arrow bg-white border border-slate-200"><input type="checkbox"/><div class="collapse-title font-semibold text-sm">Arousal threshold</div><div class="collapse-content text-sm"><p>How easily a sleeping person wakes up in response to a breathing disturbance. A low threshold means waking too easily, before the throat muscles can properly re-engage. <a class="cite" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB?pdfPage=72" target="_blank">Monograph, p.72</a></p></div></div>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section id="sources">
+  <h2 class="text-3xl font-bold text-sky-900 mb-4 border-b-2 border-sky-200 pb-2">9. Sources</h2>
+  <p class="text-sm mb-4">All facts on this page are drawn from the 19 files in the <code>Disease/CPAP</code> AI Drive folder (17 unique documents — some files were duplicate uploads of the same paper). Click through to any source; page links jump straight to the cited page.</p>
+  <div class="overflow-x-auto rounded-xl shadow border border-slate-200">
+    <table class="table table-sm bg-white text-sm">
+      <thead class="bg-slate-700 text-white"><tr><th>Source</th><th>Link</th></tr></thead>
+      <tbody>
+        <tr><td>Schwarz E.I. (2024). Zentrale Schlafapnoe – eine heterogene Gruppe von Atemregulationsstörungen. <em>Somnologie</em>. (Main CSA-specific source)</td><td><a class="link link-primary" href="https://myaidrive.com/Yd3ojk4YFXvPtnoGAoKLRQcLcBpWWz7a" target="_blank">Open</a></td></tr>
+        <tr><td>cpap_monograph.pdf — 380-page sleep-apnoea clinical monograph (untitled in metadata; main comprehensive source used throughout this page)</td><td><a class="link link-primary" href="https://myaidrive.com/yfcfwDiYYxoGjo7JxtJJQWAZqmBZCaKB" target="_blank">Open</a></td></tr>
+        <tr><td>Benning L. et al. (2025). Effects of CPAP on Blood Pressure Parameters Across Different Severities of OSA: A Meta-Analysis. <em>J Sleep Res.</em></td><td><a class="link link-primary" href="https://myaidrive.com/LrUWKxZcyczWEEYSDapgCLchCwU25SEt" target="_blank">Open</a></td></tr>
+        <tr><td>Pengo M.F. et al. (2020). OSA treatment and blood pressure: which phenotypes predict a response? <em>Eur Respir J</em>.</td><td><a class="link link-primary" href="https://myaidrive.com/qzTZazMhiQXJQE3bCTTgBNbJSmChH6Pv" target="_blank">Open</a></td></tr>
+        <tr><td>Pengo M.F. et al. (2025). Effect of CPAP therapy on blood pressure: a worldwide individual patient data meta-analysis. <em>Eur Respir J</em>.</td><td><a class="link link-primary" href="https://myaidrive.com/6vUSVAyJ5TK8sdJvRcjLb9WceoWViGZr" target="_blank">Open</a></td></tr>
+        <tr><td>Verbraecken J. et al. (2025). ERS statement on advanced telemedicine for OSA (e-Sleep). <em>Eur Respir J</em>.</td><td><a class="link link-primary" href="https://myaidrive.com/dQn2qDZucTL74M6Zg8Ey9M3iKgmwrwNZ" target="_blank">Open</a></td></tr>
+        <tr><td>Randerath W., Verbraecken J. et al. (2021). ERS guideline on non-CPAP therapies for OSA. <em>Eur Respir Rev</em>.</td><td><a class="link link-primary" href="https://myaidrive.com/wBgKLoBKBuqC4XshvMDHYYy7XTJE8RjE" target="_blank">Open</a></td></tr>
+        <tr><td>Neilson L.E. et al. (2025). OSA, Positive Airway Pressure, and Implications of Early Treatment in Parkinson Disease. <em>JAMA Neurology</em>.</td><td><a class="link link-primary" href="https://myaidrive.com/Lon8xDY2anFFNQbvt6sFgp" target="_blank">Open</a></td></tr>
+        <tr><td>Kendzerska T. et al. (2025). OSA Risk and Mental Health Conditions Among Older Canadian Adults (CLSA). <em>JAMA Network Open</em>.</td><td><a class="link link-primary" href="https://myaidrive.com/UsKgVEkz9XGW77x9dEviaw" target="_blank">Open</a></td></tr>
+        <tr><td>Ogliari G. et al. (2025). Invited commentary: OSA Risk and Mental Health. <em>JAMA Network Open</em>.</td><td><a class="link link-primary" href="https://myaidrive.com/C9r42bnVpLVytr7grospba" target="_blank">Open</a></td></tr>
+        <tr><td>Siddiquee A.T. et al. (2025). OSA and Cerebral Microbleeds in Middle-Aged and Older Adults.</td><td><a class="link link-primary" href="https://myaidrive.com/j3vx2j28rJTVXGsHVemZQH" target="_blank">Open</a></td></tr>
+        <tr><td>Andersen M.L. et al. (2026). Sleep apnea, heart health and testosterone: unravelling the triad of well-being.</td><td><a class="link link-primary" href="https://myaidrive.com/m8Fydax9GMZ4kRirNCeXic" target="_blank">Open</a></td></tr>
+        <tr><td>Chandani D.K. et al. (2025). Metabolic considerations of tirzepatide in obstructive sleep apnea (editorial).</td><td><a class="link link-primary" href="https://myaidrive.com/8aBawmfqVw78i2LPEtBLAm" target="_blank">Open</a></td></tr>
+        <tr><td>Mastrandrea C.J. et al. (2025). Bio-Monitor Detects Reduced OSA and Susceptibility to Arrhythmia in Spaceflight.</td><td><a class="link link-primary" href="https://myaidrive.com/rZbdDPooUizYCHzpEv6SPR" target="_blank">Open</a></td></tr>
+        <tr><td>2025_ERS_CPAP.pdf — compendium of 4 conference posters (digital OSA pathway, telemonitoring, TM-adherence meta-analysis, COPD/H-NIV phenotypes).</td><td><a class="link link-primary" href="https://myaidrive.com/66vBD53VDD8tNeZhmLcf5k" target="_blank">Open</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="alert bg-slate-100 mt-4 text-xs text-slate-600">
+    <span><strong>Duplicates noted (not separately cited above):</strong> a second byte-identical copy each of the Verbraecken 2025 e-Sleep statement and the Benning 2025 meta-analysis, plus a third Benning 2025 copy and a second Kendzerska 2025 copy with different file hashes but matching titles/content (near-duplicates). All duplicates were confirmed by file hash comparison before being skipped; full detail is in <code>_extraction_notes.md</code> in this folder.</span>
+  </div>
+</section>
+
+<footer class="text-center text-xs text-slate-400 py-8">
+  Educational summary generated from documents in AI Drive folder <code>Disease/CPAP/</code>. Not medical advice. Always consult a qualified clinician for diagnosis and treatment decisions.
+</footer>
+</div>
+
+<script>
+const ctx = document.getElementById('bpChart');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['Office SBP', '24h SBP', 'Diurnal (daytime) SBP', 'Nocturnal SBP', 'Office DBP', '24h DBP', 'Diurnal DBP', 'Nocturnal DBP'],
+    datasets: [{
+      label: 'CPAP effect on blood pressure (mmHg change)',
+      data: [-2.5, -2.6, -2.2, -3.5, -1.7, -2.4, -2.1, -2.1],
+      backgroundColor: ['#0284c7','#0284c7','#0284c7','#0369a1','#7dd3fc','#7dd3fc','#7dd3fc','#38bdf8'],
+      borderRadius: 6
+    }]
+  },
+  options: {
+    responsive: true,
+    plugins: {
+      legend: { display: false },
+      title: { display: true, text: 'CPAP\'s effect on blood pressure, by measurement type (Benning et al. 2025, 75 RCTs, n=10,025)' },
+      tooltip: { callbacks: { label: (c) => c.raw + ' mmHg (p<0.001 for all)' } }
+    },
+    scales: {
+      y: { title: { display: true, text: 'mmHg change vs. no CPAP' }, suggestedMin: -4.5, suggestedMax: 0.5 }
+    }
+  }
+});
+</script>
+</body>
+</html>
